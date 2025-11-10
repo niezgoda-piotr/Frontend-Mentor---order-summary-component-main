@@ -143,20 +143,52 @@ picture img {
     justify-self: stretch;
 
     display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
+    align-items: center;
+    column-gap: var(--spacing-200);
+
+    padding: var(--spacing-200);
+    background-color: var(--color-blue-50);
+    border-radius: 11px;
 }
 
 .payment-plan div {
-    flex-grow: 1;
+    justify-content: flex-start;
 }
 
-.payment-plan .plan-price {
-    flex-grow: 3;
+.payment-plan .plan-price h3 {
+    font-size: var(--text-preset-4-size);
+    font-weight: var(--font-weight-black);
+    line-height: var(--text-preset-4-line-height);
+    color: var(--color-blue-950);
+}
+
+.payment-plan .plan-price p {
+    font-size: var(--text-preset-4-size);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--text-preset-4-line-height);
+    color: var(--color-grey-600);
+}
+
+.payment-plan .icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
 }
 
 .payment-plan button {
-    justify-content: flex-end;
+    font-size: var(--text-preset-4-size);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--text-preset-4-line-height);
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background: none;
+    margin-left: auto;
+    color: var(--color-blue-700);
+}
+
+.payment-plan button:hover {
+    color: var(--color-purple-500);
 }
 
 .confirmation {
