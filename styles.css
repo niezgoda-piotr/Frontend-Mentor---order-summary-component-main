@@ -293,13 +293,11 @@ picture img {
 
     .payment-plan .plan-price h2 {
         font-size: var(--text-preset-3-size);
-        font-weight: var(--font-weight-black);
         line-height: var(--text-preset-3-line-height);
     }
 
     .payment-plan .plan-price p {
         font-size: var(--text-preset-3-size);
-        font-weight: var(--font-weight-medium);
         line-height: var(--text-preset-3-line-height);
     }
 
