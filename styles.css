@@ -74,6 +74,8 @@ figure, blockquote, dl, dd {
 
 body {
     background-color: var(--color-blue-100);
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
 
     font-family: 'Red Hat Display', monospace;
 
