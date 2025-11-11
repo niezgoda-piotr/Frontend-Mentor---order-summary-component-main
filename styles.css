@@ -95,7 +95,7 @@ picture img {
 }
 
 .main-container {
-    max-width: 375px;
+    max-width: 23.4375rem;  /* 375px*/
     margin-left: var(--spacing-300);
     margin-right: var(--spacing-300);
 
@@ -160,7 +160,7 @@ picture img {
     justify-content: flex-start;
 }
 
-.payment-plan .plan-price h3 {
+.payment-plan .plan-price h2 {
     font-size: var(--text-preset-4-size);
     font-weight: var(--font-weight-black);
     line-height: var(--text-preset-4-line-height);
@@ -176,8 +176,8 @@ picture img {
 
 .payment-plan .icon {
     flex-shrink: 0;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
 }
 
 .payment-plan button {
@@ -209,9 +209,9 @@ picture img {
 }
 
 .confirmation__proceed-button {
-    font-size: var(--text-preset-3-size);
+    font-size: var(--text-preset-4-size);
     font-weight: var(--font-weight-black);
-    line-height: 50px;
+    line-height: 3.125rem;
     font-family: inherit;
     color: var(--white);
     border: 0;
@@ -219,8 +219,8 @@ picture img {
     background-color: var(--color-blue-700);
     border-radius: 11px;
     width: 100%;
-    height: 50px;
-    box-shadow: 0 20px 20px rgba(56, 42, 225, 0.19);
+    height: 3.125rem;
+    box-shadow: 0 1.25rem 1.25rem rgba(56, 42, 225, 0.19);
 
 }
 
@@ -233,7 +233,7 @@ picture img {
 }
 
 .confirmation__cancel-button {
-    font-size: var(--text-preset-3-size);
+    font-size: var(--text-preset-4-size);
     font-weight: var(--font-weight-black);
     line-height: var(--text-preset-3-line-height);
     font-family: inherit;
@@ -251,9 +251,9 @@ picture img {
     color: var(--color-grey-600);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) { /* 768px */
     .main-container {
-        max-width: 450px;
+        max-width: 28.125rem;   /* 450px */
     }
 
     .content-container {
@@ -291,12 +291,31 @@ picture img {
         margin-bottom: var(--spacing-400);
     }
 
+    .payment-plan .plan-price h2 {
+        font-size: var(--text-preset-3-size);
+        line-height: var(--text-preset-3-line-height);
+    }
+
+    .payment-plan .plan-price p {
+        font-size: var(--text-preset-3-size);
+        line-height: var(--text-preset-3-line-height);
+    }
+
     .confirmation {
         row-gap: var(--spacing-400);
     }
+
+    .confirmation__proceed-button {
+        font-size: var(--text-preset-3-size);
+    }
+
+    .confirmation__cancel-button {
+        font-size: var(--text-preset-3-size);
+        line-height: var(--text-preset-3-line-height);
+    }
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 85rem) {    /* 1360px */
     body {
         background-image: url("./images/pattern-background-desktop.svg");
         background-repeat: no-repeat;
